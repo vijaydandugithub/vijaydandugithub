@@ -1,0 +1,13 @@
+class Human:
+    def __init__(self,c,h):
+        self.color=c
+        self.height=h
+    def run(self.n):
+        print(n+" ""runing.....")
+    def walk(self):
+        print("walking....")
+vijay=human("white",5.9) #object
+print(vijay.color,vijay.height)
+madhu=Human("black",5.6)
+print(madhu.color,madhu.height)
+
