@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>this a jquery events</title>
+    <script type="text/javascript"></script>
+    
+
+    <script>
+        $("button").click(fn1)
+        function fn1(){
+            $("#myseconddiv").fadeToggle();
+            console.log();
+        }
+    </script>
+</head>
+<body>
+    <h2>this is a my frist programming langage</h2>
+
+    <p>this paragraph is a out said division</p>
+    <div class="mydiv" id="myfirstdiv">   
+         <p> this is a my frist programming langage</p>
+    </div>
+
+    <div id="myseconddiv"  class="mydiv">
+        <p>vijay kumar is better</p>
+     <p>vijay kumar is better</p>
+    </div>
+    <div id="thirddiv" class="mydiv">
+        <ul>
+            <li>this a 1</li>
+            <li>this a 2</li>
+            <li>this a 3</li>
+            <li>this a 4</li>
+            <li>this a 5</li>
+        </ul>
+    </div>
+   <button onclick="fn1()" id="btn1">click me</button>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" ></script>
+
+<script>
+
+    $(document).ready(function(){ // ready function is used to auotometiclay running
+        $("#thirddiv").fadeToggle();
+    })
+    /*("button").click(function()
+    
+    {
+        $("#thirddiv").fadeToggle();
+    })*/
+   // function fn1(){
+        //$("#thirddiv").fadeToggle();
+       // $("#myfirstdiv").fadeToggle();
+   // }
+</script>
+
+</html>

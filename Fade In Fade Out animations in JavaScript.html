@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script type="text/javascript">
+
+        var opacity=0;
+        var intervalId=0;
+        function feadout()
+        {
+            intervalId=setInterval(hide,20);
+
+        }
+        function feadin()
+        {
+            intervalId=setInterval(show,20);
+
+        }
+        function show(){
+            var img = document.getElementById("img1");
+            opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if(opacity<1){
+                opacity = opacity+0.1;
+                img.style.opacity=opacity;
+                console.log(opacity)
+            }
+            else
+            {
+                clearInterval(intervalId);
+            }
+        
+        }
+        function hide()
+        {
+            var img = document.getElementById("img1");
+            opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if(opacity>0){
+                opacity = opacity-0.1;
+                img.style.opacity=opacity;
+                console.log()
+            }
+            else
+            {
+                clearInterval(intervalId);
+            }
+        }
+
+
+        </script>
+    </head>
+    <body>
+        <button id="btnadd" onclick="feadout()">fead on</button><br><br><br>
+        <img id="img1" src="C:\Users\vijay\Downloads\eduford_img\eduford_img\newyork.png" width="100px" height="100px" alt=""><br><br><br>
+        <button id="btnstop" onclick="feadin()">fead in</button>
+        
+    </body>
+</html>

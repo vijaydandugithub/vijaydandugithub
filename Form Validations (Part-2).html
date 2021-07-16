@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function validate(){
+            var username = document.getElementById("uname");
+            var password = document.getElementById("pass");
+            if(username.value.trim()==""){
+                alert("Blank Username");
+                return false;
+            } else if (password.value.trim()==""){
+                alert("Blank password");
+                return false;
+             } else if (password.value.trim().length<5){
+                 alert("password is very short");
+                 return false;
+              } else {
+                return true;
+            }
+
+        }
+
+
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return validate();" action="">
+            <input type="text" placeholder="user name" id="uname"><br>
+            <input type="text" placeholder="password" id="pass">
+            <br><br>
+            <button type="submit" onclick="validate()">submit</button>
+        </form>
+        
+    </body>
+</html>

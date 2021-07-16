@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript"></script>
+        <script>
+             var ID=0;  // this  is a set time out method
+        var seconds=0;
+        function printMsg(){
+            document.getElementById("op").innerHTML=seconds+"seconds";
+            seconds++;
+        }
+        function start(){
+            ID=window.setInterval(printMsg,1000); //set intervel and set timeout and clear time methods available etc..
+        }
+        function end(){
+            window.clearInterval(ID);
+        }
+        </script>
+    </head>
+    <body>
+        <button id="btnadd1" onclick="start()">start</button><br>
+        <h2 id="op">some text</h2><br>
+        <button onclick="end()">end</button>
+    </body>
+</html>

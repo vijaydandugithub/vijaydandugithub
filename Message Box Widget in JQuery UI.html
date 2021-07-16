@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Box Widget in JQuery UI</title>
+
+    <link href="jquer/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <style>
+        .mydiv{
+            border:blue 2px solid;
+            padding: 10px;
+            margin: 5px;
+        }
+        .myclass1{
+            border:blue 2px solid;
+            padding: 10px;
+            margin: 5px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="firstdiv">
+        <h2>Message Box Widget in JQuery UI</h2>
+        <button id=btn1> click me</button>
+    </div>
+    <div id="messagebox" title="" class="myclass1" >
+        <h2>this is vijay kumar</h2>
+        <a href="#"> this is a link</a><br><br>
+        <button id="div2"> click me 2</button>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+<script src="jquer/jquery-ui.min.js" type="text/javascript"></script>
+<script>
+   $(document).ready(function(){
+       $("#div2").click(function(){
+          // alert("hello vijay");
+          $("#messagebox").dialog({
+              title:"custam massage box",
+              draggable:true,
+              height:500,
+              resizable:true,
+              width:300,
+              modal:true
+          });
+       })
+   })
+</script>
+
+</html>

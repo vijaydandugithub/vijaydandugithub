@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="jquer/jquery-ui.min.css" rel="stylesheet" type="text/css">
+   
+    <title>Accordion Widget Control in JQuery UI</title>
+</head>
+<body>
+    <div id="panels">
+        <h2>Accordion Widget Control in JQuery UI</h2>
+        <p>jQuery UI is a collection of GUI widgets, animated visual effects, and themes implemented with jQuery (a JavaScript library), Cascading Style Sheets, and HTML. According to JavaScript analytics service, Libscore, jQuery UI was used on over 197,000 of the top one million websites, once making it the second most popular JavaScript library. Notable users were Pinterest, PayPal, IMDb, The Huffington Po…</p>
+   
+        <h2>Accordion Widget Control in JQuery UI</h2>
+        <p>jQuery UI is a collection of GUI widgets, animated visual effects, and themes implemented with jQuery (a JavaScript library), Cascading Style Sheets, and HTML. According to JavaScript analytics service, Libscore, jQuery UI was used on over 197,000 of the top one million websites, once making it the second most popular JavaScript library. Notable users were Pinterest, PayPal, IMDb, The Huffington Po…</p>
+        jQuery UI is a collection of GUI widgets, animated visual effects, and themes implemented with jQuery (a JavaScript library), Cascading Style Sheets, and HTML. According to JavaScript analytics service, Libscore, jQuery UI was used on over 197,000 of the top one million websites, once making it the second most popular JavaScript library. Notable users were Pinterest, PayPal, IMDb, The Huffington Po
+        <h2>Accordion Widget Control in JQuery UI</h2>
+        <p>jQuery UI is a collection of GUI widgets, animated visual effects, and themes implemented with jQuery (a JavaScript library), Cascading Style Sheets, and HTML. According to JavaScript analytics service, Libscore, jQuery UI was used on over 197,000 of the top one million websites, once making it the second most popular JavaScript library. Notable users were Pinterest, PayPal, IMDb, The Huffington Po…</p>
+   
+   
+    </div>
+</body>
+<script src="jquer/external/jquery/jquery.js" type="text/javascript" ></script>
+<script src="jquer/jquery-ui.min.js" type="text/javascript" ></script>
+<script>
+    $("#panels").accordion({
+        // this a case sensitive
+        collapsible:true,
+        event:"mouseover",   //mouseover,click
+        animate:1000,        //animate using
+        active:1,           // active is finding an index value depend
+        heightStyle:true,    // box space is adgesment
+        icons:{header:" ui-icon-arrowthick-1-e",activeHeader:"ui-icon-arrowthick-1-nw"} // using an icon in jquery ui library
+    });
+</script>
+
+</html>

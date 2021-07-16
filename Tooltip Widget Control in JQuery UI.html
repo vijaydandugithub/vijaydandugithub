@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="jquer/jquery-ui.min.css" rel="stylesheet" type="text/css">
+   
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <h2>Intradation to jquery UI</h2>
+         </div>
+         <a id="d1" href="#" title="">Tooltip optiion</a>
+</body>
+<script src="jquer/external/jquery/jquery.js" type="text/javascript" ></script>
+<script src="jquer/jquery-ui.min.js" type="text/javascript" ></script>
+
+<script>
+    //$("#d1").tooltip();
+    //$("a").tooltip();
+    $("#d1").tooltip({
+       // track=true,
+        content:"click here",
+        show:{
+            effect:"pulsate",  // pulsate,bounce,hightlight,explode,bind
+            duration:5000},
+            hide:{
+            effect:"explode",  // 
+            duration:5000
+            }
+        
+        
+    });
+
+
+</script>
+
+
+</html>

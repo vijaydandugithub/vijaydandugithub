@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>call back & changing Effects</title>
+    <style type="text/css"></style>
+    <style>
+        .mydiv{
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 10px;
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="myfristdiv" class="mydiv">
+    <p>this paragraph is a out said division</p>
+    <p>this paragraph is a out said division</p>
+</div>
+    <div class="mydiv" id="myseconddiv">   
+         <p> this is a my frist programming langage</p>
+    </div><br>
+    <button id="btn1" class="mytoggle">Toggle</button>
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" ></script>
+
+<script>
+   /* $(document).ready(function(){
+
+        $("#btn1").click(function(){
+            $("#myfristdiv").fadeToggle(5000,function(){     //using a sliddown and slide toggle and more than events uses etc....
+                alert("division is fedded");
+            })
+        })
+    })*/
+
+
+
+    $(document).ready(function(){
+
+$("#btn1").click(function(){
+    $("#myfristdiv").slideUp(2000).slideDown(2000).fadeOut(2000).fadeIn(2000)
+})
+    })
+    </script>
+</html>

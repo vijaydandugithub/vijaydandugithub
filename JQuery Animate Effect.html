@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>jquery animate Effects</title>
+
+    <style type="text/css" ></style>
+
+    <style>
+        .mydiv{
+            border: 2px red solid;
+            margin: 10px;
+        }
+    </style>
+
+    <style>
+        .myclub{
+            height: 50px;
+            width: 50px;
+            background-color: blueviolet;
+            opacity: 0.4;
+            position: absolute;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>this is a my frist programming langage</h2>
+
+    <p>this paragraph is a out said division</p>
+    <div class="mydiv" id="myfristdiv">   
+         <p> this is a my frist programming langage</p>
+    </div>
+
+    <div id="myseconddiv"  class="mydiv">
+        <p>vijay kumar is better</p>
+     <p>vijay kumar is better</p>
+    </div>
+    <div id="thirddiv" class="mydiv">
+        <ul>
+            <li>this a 1</li>
+            <li>this a 2</li>
+            <li>this a 3</li>
+            <li>this a 4</li>
+            <li>this a 5</li>
+        </ul>
+    </div>
+   <button id="btn1">click</button>
+   <button id="btn2">click me</button>
+   <button id="btn3">Animation</button><br>
+   <P id="club" class="myclub">CLUB</P>
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" ></script>
+
+<script>
+    $(document).ready(function(){
+
+        $("#btn3").click(function(){
+
+        
+    $("#club").animate({
+        left: '150px',
+        height:'100px',
+        width: '100px',
+        opacity:'1'
+        },2000)
+    })
+})
+
+</script>
+
+</html>

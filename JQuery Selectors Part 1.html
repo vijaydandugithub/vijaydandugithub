@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style type="text/css"></style>
+   <style>
+        .A{
+            color: red;
+        }
+    </style>
+<script>
+    function fn1(){
+       $(".A").fadeToggle();
+       $("#heading1").fadeToggle();
+    }
+</script>
+</head>
+<body>
+    <h2 class="A" id="heading1"> setting up jQuery</h2><br>
+    <h2 id="heading1"> setting up jQuery</h2><br>
+
+    <div class="A" id="B">
+        <h2> setting up jQuery</h2><br>
+        <h2> setting up jQuery</h2><br>
+    </div>
+    <button onclick="fn1()" id="btn1">click me</button>
+    
+</body>
+</html>

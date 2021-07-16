@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function fn1()
+        {
+            var select = document.getElementById("selectbox");
+            alert(select.options[select.selectedIndex].value);
+        }
+
+        </script>
+    </head>
+    <body>
+        <select id="selectbox">
+            <option value="show microspft">microsoft</option>
+            <option value="show intel">intel</option>
+            <option value="bay now hp laptops">hp laptop</option>
+
+        </select>
+        <button onclick="fn1()">click here</button>
+    </body>
+</html>

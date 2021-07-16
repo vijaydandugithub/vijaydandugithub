@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function validation(){
+            var username = document.getElementById("usename");
+            var password = document.getElementById("pass");
+            if(username.value.trim() =="" || password.value.trim() ==""){  // space uing trim() method
+                alert("No Blanck allowed");
+                return false;
+            } else
+            {
+            return true;
+            }
+        }
+
+        </script>
+    </head>
+    <body>
+        <form onsubmit=" return validation()" action="massage.html">
+            <input id="usename" type="text" placeholder="user name"><br>
+            <input id="pass" type="text" placeholder="password"><br>
+            <br>
+            <button type="submit">submit</button>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        document.write("javascript <br>")
+        </script>
+    </head>
+    <body bgcolor="black" text="white">
+    <!--     <center><h3> javascript syntax</h3></center>
+        <script>
+            // testing purpose
+            document.write("hello vijay kumar");
+        </script>
+        <p id="demo"></p>
+        <script>
+            // innerHTML (form validation)
+            document.getElementById("demo").innerHTML="welcome to javascrpit";
+            // alert (alert box)
+            //alert("invalid synatx");
+            //window.alert("valid");
+            </script>
+            <h3>FUNCTIONS</h3>
+            <script>
+                function hello(){
+                    //document.write("welcome to javascript");
+                    alert("hello python");
+                }
+            </script>
+            <input type="button" value="click here" onclick="hello()"/>
+
+            <script>
+                /*function multiply(number){
+                    document.write(number * number * number);
+                }*/
+            </script><br><br><br>
+            <input type="button" value="submit" onclick="multiply(2)"><br><br><br>
+            <script>
+                /*function multiply(number){
+                    document.write();
+                    return number * number * number;
+                }*/
+            </script>
+            <script>
+              //  document.write(multiply(2))
+            </script>
+            <script>
+           function vijay(number){
+               //document.write();
+               return(number * number * number);
+               
+           }
+        </script>
+        <script>
+            document.write(vijay(2))
+        </script>
+        <center><h1>variables in javascript</h1></center>
+
+        <script>
+            var a=20
+            var b=30
+            document.write(a+b)
+        </script><br>
+        <h4>local variable and global variable</h4><br>
+        <script>
+            function add(){
+                var x=50; // local variable
+                var y=50;
+                document.write("value x is " + x,y); 
+            }
+            add()
+            
+        </script><br>
+        <script>
+            var x=30; // global variable
+            function vijay(){
+                
+            }
+            vijay();
+            document.write("value x  is "+x);
+        </script><br>
+        <center><h2>Datatypes in javascript</h2></center>
+        <p>1.Number Datatype<br>2.String Datatypes<br>3.Boolean Datatypes <br>4.Regular Datatypes <br>5. Array</p>
+        <script>
+            var x=20.5; // number datatype
+            document.write(x);
+        </script><br>
+        <script>
+            var name="vijay kumar";// string data type
+            document.write(name);
+            document.write(typeof(name));
+        </script><br>
+        <script>
+            var a=true; // boolean
+            document.write(a);
+        </script><br>
+        <script>
+        a=10; // Regular datatype
+        b=20;
+        c=a+b;
+        document.write(c);
+</script><br>
+<script>
+    // array datatypes is pedding
+</script> 
+<center><h2>Operators</h2></center>
+<h1>Demo: JavaScript Arithmatic Operators</h1>
+	<p>x = 5, y = 10, z = 15;</p>
+	<p id="p1">x+y=</p>
+	<p id="p2">y-x=</p>
+	<p id="p3">x*y=</p>
+	<p id="p4">y/x=</p>
+	<p id="p5">x%2=</p>
+	<p id="p6">x++=</p>
+	<p id="p7">x--=</p>
+	
+	<script>
+		var x = 5, y = 10, z = 15;
+
+		document.getElementById("p1").innerHTML += x + y; //returns 15
+
+		document.getElementById("p2").innerHTML += y - x; //returns 5
+
+		document.getElementById("p3").innerHTML += x * y; //returns 50
+
+		document.getElementById("p4").innerHTML += y / x; //returns 2
+
+		document.getElementById("p5").innerHTML += x % 2; //returns 1
+
+		x++;
+		document.getElementById("p6").innerHTML += x; //returns 6
+
+		x--;
+		document.getElementById("p7").innerHTML += x; //returns 5 
+        
+        var a=10;
+        var b=20;
+        document.write(++a);
+        document.write(a++);
+        document.write(a++);
+        document.write(b--);
+        </script>
+    <p><h4>comparison /relatiional Operators</h4></p>      
+</script>
+<script>
+    </script>
+   <center><h2>if - else statement in javascript</h2></center>
+   <script>
+       var x = 20;
+       if(x<10){
+           document.write("x is gater than 10");
+        }else{
+            document.write("x is less than 10");
+        }
+   </script>
+   <script>
+       var marks=90; // else-if statement
+       if(marks>90){
+           document.write("a grade");
+       }else if(marks>85){
+           document.write("b grade");
+       }else if(marks>35){
+           document.write("fail grade");
+        }
+   </script>
+   <center><h2>Loops in javascript</h2></center>
+   <p>1.for loop <br>2.while loop <br>3.do-while loop </p>
+  <script>
+       for(i=1; i<=10; i++){
+           document.write("2 x " + i + " = " + 2*i + "<br>");
+            
+       }
+   </script>
+   <p>while loop</p>
+   <script>
+       var i=1;
+       while(i<=50){
+           document.write(i + "<br>");
+           i=i+2;
+       }
+   </script> 
+   <script>
+       var i=51;
+       do{
+           document.write(i + "<br>");
+           i=i+2
+       } while (i<=50) {
+           
+       }
+   </script>
+   <p>switch statement in javascript</p>
+   <script>
+    var marks=95;
+    switch(true){
+        case marks>90 : results="A grade";
+            break;
+
+            case marks>75 : results="B grade";
+            break;
+            case marks>60 : results="C grade";
+            break;
+            case marks>45 : results="D grade";
+            break;
+            case marks>36 : results="E grade";
+            break;
+            default : results="fail"
+
+    }
+    document.write(results); 
+    <p>3.comparison Operators <br>4.Bitwise Operators <br>5.logical Operators</p>
+   </script>
+     <script>
+         var x=25;
+         var y=25;
+        /* if(x==y){
+             document.write("true")
+         }else{
+             document.write("false")
+         }*/
+
+         if(x=!y){
+             document.write("true")
+         }else{
+             document.write("false")
+         }
+
+
+         var fname="vijay";
+         var sname="kumar"; // cap symbal
+         if(fname=="vijay" ^ sname=="kum"){
+             document.write("welcome");
+         }
+
+         <center><h2>arrays in javascript</h2></center>
+         <h6>3. ways in arrays</h6>
+         <p>1.by array literal <br>2. array directly(new keyword) <br>3.array constuctor</p>
+         <script>
+             var students=["vijay","madhu","nani","reddy"]; // way 1 
+             //document.write(students);
+             for(i=0; i<students.length; i++){
+                 document.write(students[i]+"<br>")
+             }
+             var i=0;
+             var stu=new Array(); // way 2 new
+             stu[0]="vijay";
+             stu[1]="madhu";
+             while (i<stu.length) {
+                 document.write(stu[i] + "<br>")
+                 i++;
+             }
+
+             var emp=new Array("vijay","madhu","nani","reddy");
+             for(i=0; i<emp.length; i++){
+                 document.write(emp[i] + "<br>")
+             } 
+         </script>
+
+     </script> -->
+
+     <center><h2>Objects in javascript</h2></center>
+     <script>
+         var stu1={rno:101, name:"vijay",branch:"ece"};
+         document.write(stu1.rno + " " + stu1.name + " " + stu1.branch);
+
+         var stu2= new Object();
+         stu2.rno=222;
+         stu2.name="bokka";
+         stu2.branch="ece";
+         document.write(stu2.rno + " " + stu2.name + " " + stu2.branch)
+        // using a  constructor way 3.
+         function student(roll,name,addr,branch){
+             this.roll=roll;
+             this.name=name;
+             this.addr=addr;
+             this.branch=branch;
+         }
+         var stu3=new student(10,"vijay","gty","ece");
+         document.write(stu3.roll + " " + stu3.name + " " + stu3.addr + " " + stu3.branch);
+     </script>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Input from Radiobuttons
+        </title>
+        <script type="text/javascript">
+        function fn1()
+        {
+            var rd1 = document.getElementById("rd1");
+            var rd2 = document.getElementById("rd2");
+            if(rd1.checked==true){
+            alert("this channel is selected: " + rd1.value);
+            }else if(rd2.checked==true){
+                alert("this channel is selected: " + rd2.value);
+            }else
+                alert("no channel selected")
+            }
+        
+
+        </script>
+    </head>
+    <body>
+        <input name="a" id="rd1" type="radio" value="very simple javascript">simple program</input><br>
+        <input name="a" id="rd2" type="radio" value="w3School">learn javascript</input>
+        <br><br>
+        <button onclick="fn1()" id="btn1">click me</button>
+    </body>
+</html>
